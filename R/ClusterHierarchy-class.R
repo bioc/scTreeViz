@@ -1,7 +1,7 @@
 #' ClusterHierarchy class to manage treeviz cluster data
 setClass(
   "ClusterHierarchy",
-  contains = c("DataFrame")
+  contains = c("DFrame")
 )
 
 
@@ -109,6 +109,6 @@ ClusterHierarchy <- function(hierarchy, col_regex=NULL, columns =NULL) {
   
   new(
     "ClusterHierarchy",
-    as(hierarchy, "DataFrame")
+    as(hierarchy, "DFrame")
   )
 }

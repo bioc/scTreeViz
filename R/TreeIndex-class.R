@@ -3,7 +3,7 @@ setClassUnion("CharacterOrNull", c("character", "NULL"))
 #' TreeIndex class to manage and query hierarchical data
 setClass(
   "TreeIndex",
-  contains = c("DataFrame"),
+  contains = c("DFrame"),
   representation(
     feature_order = "CharacterOrNull",
     leaf_of_table = "data.table",
